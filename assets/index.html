@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&amp;family=Roboto:wght@300&amp;family=Smooch+Sans:wght@300&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Menu -->
+    <nav class="navbar is-transparent" role="navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <div class="navbar-item logo" style="border:none">
+                    <img src="https://cdn.thuvienphapluat.vn/images/logo_xuan.png" alt=""> <span class="title has-text-danger ml-1">THƯ VIỆN PHÁP LUẬT</span>
+                </div>
+            </div>
+            <div class="navbar-menu" id="navMenu">
+                <div class="navbar-start"></div>
+                <div class="navbar-end is-size-7-desktop is-size-6-fullhd">
+                    <a class="navbar-item" href="#"><i class="fa-solid fa-house"></i>&ensp;Trang chủ</a>
+                    <a class="navbar-item" href="#"><i class="fa-brands fa-dropbox"></i>&ensp;Các gói dịch vụ</a>
+                    <a class="navbar-item" href="#"><i class="fa-solid fa-newspaper"></i>&ensp;Tin tức Pháp Luật</a>
+                    <a class="navbar-item" href="#"><i class="fa-solid fa-scale-balanced"></i>&ensp;Cộng đồng Dân Luật</a>
+                    <a class="navbar-item" href="#"><i class="fa-solid fa-envelope"></i>&ensp;Liên hệ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Tab -->
+    <div class="container">
+        <div class="columns mt-4">
+            <div class="column is-9-fullhd is-8-desktop ">
+                <main>
+                    <input id="tab1" type="radio" name="tabs" checked>
+                    <label for="tab1" class="is-size-6-fullhd is-size-7-desktop">Văn Bản Pháp Luật</label>
+                    <input id="tab2" type="radio" name="tabs">
+                    <label for="tab2" class="is-size-6-fullhd  is-size-7-desktop">Dự Thảo</label>
+                    <input id="tab3" type="radio" name="tabs">
+                    <label for="tab3" class="is-size-6-fullhd  is-size-7-desktop">Công Văn</label>
+                    <input id="tab4" type="radio" name="tabs">
+                    <label for="tab4" class="is-size-6-fullhd  is-size-7-desktop">Tiêu Chuẩn Việt Nam</label>
+                    <input id="tab5" type="radio" name="tabs">
+                    <label for="tab5" class="is-size-6-fullhd  is-size-7-desktop">Tra Cứu Bản Án</label>
+                    <section id="content1" style="font-size: 12px;">
+                        <span>Từ khóa: <span style="color:#656060;font-weight: bold;">Số Hiệu, Tiêu Đề</span> hoặc <span style="color:#656060;font-weight: bold;">Nội dung ngắn gọn</span> của Văn Bản</span>
+                        <div class="mt-3">
+                            <input type="text" placeholder="Tìm Văn Bản Pháp Luật" class="input">
+                            <button class="button is-rounded">Tìm kiếm</button>
+                            <div>
+                                <ul class="is-flex is-justify-content-flex-start">
+                                    <li class="py-2 has-text-danger mr-2">
+                                        Tra cứu nhanh:
+                                    </li>
+                                    <li class="py-2 mr-2">
+                                        <a href="">Thời điểm áp dụng</a>
+                                    </li>
+                                    <li class="py-2 mr-2">
+                                        <a href="">Tình trạng hiệu lực</a>
+                                    </li>
+                                    <li class="py-2 mr-2">
+                                        <a href="">Lĩnh vực, Ngành</a>
+                                    </li>
+                                    <li class="py-2 mr-2">
+                                        <a href="">Thời gian ban hành</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="content2" style="font-size: 12px;">
+                        <span>Từ khóa: <span style="color:#656060;font-weight: bold;">Số Hiệu, Tiêu Đề</span> hoặc <span style="color:#656060;font-weight: bold;">Nội dung ngắn gọn</span> của Văn Bản</span>
+                        <div class="mt-3">
+                            <input type="text" placeholder="Tìm Dự Thảo Pháp Luật" class="input">
+                            <button class="button is-rounded">Tìm kiếm</button></div>
+                    </section>
+                    <section id="content3" style="font-size: 12px;">
+                        <span>Từ khóa: <span style="color:#656060;font-weight: bold;">Số Hiệu, Tiêu Đề</span> hoặc <span style="color:#656060;font-weight: bold;">Nội dung ngắn gọn</span> của Văn Bản</span>
+                        <div class="mt-3">
+                            <input type="text" placeholder="Tìm Công Văn" class="input">
+                            <button class="button is-rounded">Tìm kiếm</button></div>
+                    </section>
+                    <section id="content4" style="font-size: 12px;">
+                        <span>Từ khóa: <span style="color:#656060;font-weight: bold;">Số Hiệu, Tiêu Đề</span> hoặc <span style="color:#656060;font-weight: bold;">Nội dung ngắn gọn</span> của Văn Bản</span>
+                        <div class="mt-3">
+                            <input type="text" placeholder="Tìm Tiêu Chuẩn Việt Nam" class="input">
+                            <button class="button is-rounded">Tìm kiếm</button></div>
+                    </section>
+                    <section id="content5" style="font-size: 12px;">
+                        <span>Từ khóa: <span style="color:#656060;font-weight: bold;">Số Hiệu, Tiêu Đề</span> hoặc <span style="color:#656060;font-weight: bold;">Nội dung ngắn gọn</span> của Văn Bản</span>
+                        <div class="mt-3">
+                            <input type="text" placeholder="Tra Cứu Bản Án" class="input">
+                            <button class="button is-rounded">Tìm kiếm</button></div>
+
+                    </section>
+                </main>
+            </div>
+            <div class="columns is-4-desktop mt-1">
+                <div class="column ">
+                    <div class="box is-flex">
+                        <ul style="line-height: 35px;">
+                            <li class="is-flex is-align-items-baseline"><span><img src="./img/zalo.svg" alt=""></span>&ensp;Hỗ trợ qua Zalo</li>
+                            <li><span><img src="./img/skype.svg" alt=""></span>&ensp;Hỗ trợ trực tuyến</li>
+                            <li><span style="color: #1c63c4; "><span><img src="./img/phone_2.svg" alt=""></span>&ensp;(028) 3930 3279</span>
+                            </li>
+                            <li><span style="color: red;"><span><img src="./img/phone.svg" alt=""></span>&ensp;0906 22 99 66</span>
+                            </li>
+                            <li><button class="button btn_dn">Mời góp ý</button></li>
+                        </ul>
+                        <div class="sign_up">
+                            <label class="label" for="">Đăng nhập</label>
+                            <input placeholder="Tên đăng nhập" style="width: 100%;" type="text" class="input"> &ensp;
+                            <input placeholder="Mật khẩu" style="width: 100%;" type="text" class="input">
+                            <button class="button btn_dn">Đăng nhập</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

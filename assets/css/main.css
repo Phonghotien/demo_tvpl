@@ -1,0 +1,155 @@
+:root {
+    --smooth: 0.5s;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+    line-height: 1.6rem;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    color: #141c3a;
+    font-weight: 400;
+}
+
+.navbar {
+    background: rgb(236, 181, 10);
+    background: linear-gradient(0deg, rgba(236, 181, 10, 1) 33%, rgba(232, 221, 208, 1) 100%);
+}
+
+.navbar-item {
+    font-weight: 600;
+    color: #fff;
+    border-left: 1px solid #fff;
+}
+
+.navbar-item img {
+    max-height: 4.75rem;
+}
+
+a:hover {
+    transition: var(--smooth);
+    color: #f14668 !important;
+}
+
+main {
+    background: #FFF;
+    padding: 10px 30px 80px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-size: 13px;
+}
+
+input,
+section {
+    clear: both;
+    padding-top: 10px;
+    display: none;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    float: left;
+    padding: 10px 20px;
+    border-top: 2px solid transparent;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid #DDD;
+}
+
+label:hover {
+    cursor: pointer;
+    color: #f14668;
+    transition: var(--smooth);
+    text-decoration: underline;
+}
+
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3,
+#tab4:checked~#content4,
+#tab5:checked~#content5 {
+    display: block;
+}
+
+input:checked+label {
+    border-top-color: #FFB03D;
+    border-right-color: #DDD;
+    border-left-color: #DDD;
+    border-bottom-color: transparent;
+    text-decoration: none;
+}
+
+.input {
+    width: 80%;
+}
+
+.button {
+    height: 40px;
+    border-width: 2px;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 1rem;
+    color: #FFB03D;
+    border-color: #FFB03D;
+}
+
+.button.is-rounded {
+    border-radius: 9999px;
+    padding-left: calc(1em + 0.25em);
+    padding-right: calc(1em + 0.25em);
+}
+
+.button:hover {
+    background-color: #FFB03D;
+    border-color: #FFB03D;
+    color: #fff;
+    transition: var(--smooth);
+}
+
+.navbar-brand {
+    position: relative;
+    min-height: 4.25rem;
+}
+
+.logo {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: max-content;
+}
+
+.label {
+    padding: 0;
+}
+
+.sign_up {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.btn_dn {
+    margin-top: 20px;
+    border-color: #1c63c4;
+    color: #1c63c4;
+}
+
+.btn_dn:hover {
+    background-color: #1c63c4;
+    color: #fff;
+    transition: var(--smooth);
+    border-color: #1c63c4;
+}
